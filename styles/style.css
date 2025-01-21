@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+.banner{
+    max-width: 1536px;
+    width: 95%;
+    
+    margin: 0px auto;
+    padding: 60px;
+    
+}
+.banner-container{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 30px;
+    
+}
+.banner-img{
+     background-image: url(../images/shapes/Group\ 8450.png); 
+     background-repeat: no-repeat;
+     background-size: cover;
+     /* background-position-x: 20px; */
+     
+}
+.banner-img img{
+    width: 100%;
+    margin-bottom: 100px;
+}
+.banner-title{
+    color: #575757;
+    font-family: Montserrat;
+    font-size: 3.75rem;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: -2%;
+    text-align: left;
+}
+.banner-description{
+    color: rgb(130, 130, 130);
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: -2%;
+    text-align: left;
+    margin-top: 40px;
+}
+.banner-btn{
+    border-radius: 100px;
+    padding: 20px 28px 20px 28px;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    margin-top: 40px;
+    box-shadow: 0px 2px 30px 0px rgba(252, 143, 73, 0.5);
+    /* gradient */
+    background: linear-gradient(69.40deg, rgb(251, 162, 79) -6.919%,rgb(255, 30, 30) 144.985%);
+}
+#skip{
+ font-size: 3.5rem;
+ color: #FBA24F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .banner-img{
+           background-image: none;
+           background-color: #FBA24F;
+           border-radius: 10px;
+    }
+    .banner-img img{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .banner-title{
+        color: #575757;
+        font-family: Montserrat;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: -2%;
+        text-align: left;
+    }
+    #skip{
+        font-size: 2.5rem;
+        color: #FBA24F;
+       }
+       .banner-btn{
+        margin-left: 50px;
+       }
+}
