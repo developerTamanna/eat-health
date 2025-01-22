@@ -222,7 +222,7 @@ margin-top: 10px;
     max-width: 1536px;
     width: 100%;
     margin: 0px auto;
-    padding: 50px 90px 50px 90px;
+    padding: 40px 90px 50px 90px;
 }
 
 .revieo-container{
@@ -268,6 +268,53 @@ margin-top: 10px;
     text-align: left;
     margin-top: 8px;
 }
+
+
+/* start footer section */
+
+.footer{
+    max-width: 1536px;
+    width: 100%;
+    margin: 90px auto auto auto;
+    /* Default / Black */
+    background: rgb(11, 13, 23);
+    
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+
+
+.footer-title{
+    font-family: Manrope;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #5B5B5B;
+    /* line-height: 0px;
+    letter-spacing: 0%;
+    text-align: center; */
+}
+
+#eat{
+ color: #FBA24F;
+}
+.footer-description{
+color: rgb(255, 255, 255);
+font-family: Montserrat;
+font-size: 1rem;
+font-weight: 400;
+margin-top: 37px;
+line-height: 26px;
+letter-spacing: 0%;
+
+}
+
+
+
 
 
 
