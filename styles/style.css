@@ -82,7 +82,7 @@
     max-width: 1536px;
     width: 95%;
     margin: 0px auto;
-    padding: 60px;
+    padding: 60px 60px 0px 60px;
     background-image: url(../images/shapes/7.png);
     background-repeat: no-repeat;
     background-size: cover
@@ -108,7 +108,8 @@ width: 50%;
 }
 .about-img img{
     width: 100%;
-    margin-top: 64px;
+    margin-top: 70px;
+    padding: 64px 199px 0px 100px;
 }
 .about-title{
      color: rgb(112, 112, 112);
@@ -129,6 +130,8 @@ width: 50%;
      text-align: left;
 }
 .about-btn{
+    color: #fff;
+    border: none;
     border-radius: 100px;
     box-shadow: 0px 2px 30px 0px rgba(252, 143, 73, 0.5);
     /* gradient */
@@ -136,6 +139,83 @@ width: 50%;
     padding:24px 32px ;
     background: linear-gradient(69.40deg, rgb(251, 162, 79) -6.919%,rgb(255, 30, 30) 144.985%);
 }
+
+
+/* satart recipe section */
+
+.recipe{
+    max-width: 1536px;
+    width: 85%;
+    margin: 0px auto;
+    padding: 60px;
+}
+.recipe-title{
+ color: rgb(103, 103, 103);
+font-family: Montserrat;
+font-size: 2rem;
+font-weight: 700;
+line-height: 44px;
+letter-spacing: 0%;
+text-align: center;
+text-transform: capitalize;
+}
+.recipe-description{
+    color: rgb(37, 37, 37);
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 30px;
+}
+.rechipi-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 32px 50px 50px 50px;
+}
+.rechipi-card-1{
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+}
+
+.rechipi-card-1-title{
+color: rgb(24, 25, 31);
+font-family: Montserrat;
+font-size:1.75rem ;
+font-weight: 800;
+line-height: 40px;
+letter-spacing: 0%;
+text-align: left;
+margin-top: 30px;
+}
+.rechipi-card-1-description{
+color: rgb(24, 25, 31);
+font-family: Montserrat;
+font-size: 1rem;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0%;
+text-align: left;
+margin-top: 10px;
+}
+.rechipi-card-2{
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+}
+.rechipi-container img{
+    width: 100%;
+}
+
+
+
+
+
 
 
 
@@ -170,6 +250,7 @@ width: 50%;
         width: 100%;
         margin-left: 10px
         
+        
     }
     .banner-title{
         color: #575757;
@@ -190,6 +271,7 @@ width: 50%;
 
        /* start about section */
        .about{
+        padding: 0px;
         margin-top: 50px;
         width: 100%;
         /* padding: 60px; */
@@ -202,12 +284,18 @@ width: 50%;
     }
        .about-container{
         flex-direction: column;
-        
+        padding: 20px;
+        /* text-align: center; */
        }
        .about-img{
         
         width: 100%;
                   
+        }
+        .about-img img{
+            width: 100%;
+            /* margin-top: 70px; */
+            padding: 0px;
         }
         .about-content{
             width: 100%;
@@ -215,5 +303,24 @@ width: 50%;
         .about-description{
             line-break: normal;
 
+        }
+        .about-btn{
+            border-radius: 20px;
+            margin-top: 20px;
+            padding:10px 15px ;
+            
+           
+        }
+        
+        
+        .recipe{
+            padding: 0px;
+            margin-top: 50px;
+        }
+        .rechipi-container{
+           margin-top: 30px;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px;
+            padding: 0px;
         }
 }
