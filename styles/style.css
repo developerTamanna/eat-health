@@ -145,9 +145,9 @@ width: 50%;
 
 .recipe{
     max-width: 1536px;
-    width: 85%;
+    width: 100%;
     margin: 0px auto;
-    padding: 60px;
+    padding: 90px 60px 60px 60px;
 }
 .recipe-title{
  color: rgb(103, 103, 103);
@@ -170,6 +170,8 @@ text-transform: capitalize;
     margin-top: 30px;
 }
 .rechipi-container{
+    width: 85%;
+    margin: 0px auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -215,16 +217,57 @@ margin-top: 10px;
 
 
 
+/* start review section */
+.review{
+    max-width: 1536px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 50px 90px 50px 90px;
+}
+
+.revieo-container{
+    width: 85%;
+    margin: 0px auto;
+    padding: 32px 50px 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    /* place-items: center; */
+    align-items: center;
+   
+    
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+/* Default / White */
+    background: rgb(255, 255, 255);
 
 
+    /* new */
+       
+}
 
 
+.review-1-title{
+    color: rgb(24, 25, 31);
+    font-family: Montserrat;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0%;
+    text-align: left;
+}
 
 
-
-
-
-
+.review-1-description{
+    color: rgb(24, 25, 31);
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 8px;
+}
 
 
 
@@ -238,6 +281,7 @@ margin-top: 10px;
     }
     .banner-content{
         width: 100%;
+        
     }
     .banner-img{
            background-image: none;
@@ -256,23 +300,34 @@ margin-top: 10px;
         color: #575757;
         font-family: Montserrat;
         font-size: 2rem;
-        font-weight: 700;
+        font-weight: 500;
         line-height: 130%;
         letter-spacing: -2%;
-        text-align: left;
+        margin-left: 15px;
+       
     }
     #skip{
-        font-size: 2.5rem;
+        font-size: 2rem;
         color: #FBA24F;
        }
+       .banner-description{
+        color: rgb(130, 130, 130);
+        font-family: Montserrat;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 160%;
+        letter-spacing: -2%;
+        margin-top: 40px;
+        margin-left: 15px;
+    }
        .banner-btn{
-        margin-left: 50px;
+        margin-left: 15px;
        }
 
        /* start about section */
        .about{
         padding: 0px;
-        margin-top: 50px;
+        margin-top: 30px;
         width: 100%;
         /* padding: 60px; */
         background-image: url(../images/shapes/7.png);
@@ -281,6 +336,9 @@ margin-top: 10px;
         
        
         
+    }
+    .about-title{
+        margin-left: 15px;
     }
        .about-container{
         flex-direction: column;
@@ -302,12 +360,15 @@ margin-top: 10px;
         }
         .about-description{
             line-break: normal;
+            margin-top: 20px;
+            margin-left: 15px;
 
         }
         .about-btn{
             border-radius: 20px;
-            margin-top: 20px;
+            margin-top: 30px;
             padding:10px 15px ;
+            margin-left: 15px;
             
            
         }
@@ -322,5 +383,19 @@ margin-top: 10px;
             grid-template-columns: repeat(1, 1fr);
             gap: 30px;
             padding: 0px;
+        }
+
+        /* start .review section */
+        .revieo-container{
+            grid-template-columns: repeat(1, 1fr);
+            gap: 40px;
+        }
+        .review{
+            padding: 0px;
+            margin-top: 50px;
+        }
+        .review-1-title{
+            font-size: 2rem;
+            font-weight: 500;
         }
 }
