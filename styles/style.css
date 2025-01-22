@@ -10,28 +10,35 @@
 .banner{
     max-width: 1536px;
     width: 95%;
-    
     margin: 0px auto;
     padding: 60px;
     
 }
 .banner-container{
    display: flex;
-   justify-content: flex-start;
+   justify-content: space-around;
    align-items: center;
-   gap: 30px;
+   gap: 15px;
+ 
     
+}
+.banner-content{
+    width: 50%;
 }
 .banner-img{
      background-image: url(../images/shapes/Group\ 8450.png); 
      background-repeat: no-repeat;
      background-size: cover;
+     width: 50%;
+     /* position: relative; */
      /* background-position-x: 20px; */
      
 }
 .banner-img img{
     width: 100%;
-    margin-bottom: 100px;
+    /* top: -20px; */
+    margin-bottom: 26px;
+    margin-left: -40px
 }
 .banner-title{
     color: #575757;
@@ -81,17 +88,26 @@
 
 
 @media screen and (max-width:576px) {
+    .banner{
+        padding: 0;
+    }
     .banner-container{
         flex-direction: column-reverse;
+    }
+    .banner-content{
+        width: 100%;
     }
     .banner-img{
            background-image: none;
            background-color: #FBA24F;
            border-radius: 10px;
+           width: 100%;
+           /* margin: 0px auto; */
     }
     .banner-img img{
         width: 100%;
-        margin-bottom: 50px;
+        margin-left: 10px
+        
     }
     .banner-title{
         color: #575757;
